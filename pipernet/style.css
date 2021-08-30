@@ -34,6 +34,7 @@ body {
    max-width: 1219px;
    padding: 0 55px;
    margin: 0 auto;
+   box-sizing: border-box;
 }
 
 .section-white {
@@ -109,7 +110,7 @@ figure {
 
 .hero {
    background: url(assets/img/background.png) 0 0 / cover no-repeat;
-   min-height: 483px;
+   background-position: center center;
 }
 
 .content-title {
@@ -143,6 +144,7 @@ figure {
    font-style: italic;
    max-width: 893px;
    text-align: center;
+   padding: 2.5em 0;
 }
 
 .notice img {
