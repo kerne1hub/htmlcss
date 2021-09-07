@@ -1,0 +1,58 @@
+@import "../style.css";
+@import "../header.css";
+@import "../footer.css";
+
+.stores {
+    padding: 2em 0 3em 0;
+}
+
+.stores-title {
+    font-size: var(--font-size-md);
+    font-weight: 400;
+    line-height: 1.5455em;
+}
+
+.stores-card {
+    grid-column: span 4;
+    cursor: pointer;
+}
+
+.stores-card:hover {
+    background: var(--color-boulder-a4);
+}
+
+.stores-store {
+    color: var(--color-codgray);
+    line-height: 1.5em;
+}
+
+.stores-tags {
+    font-size: var(--font-size-sm);
+    color: var(--color-dovegray);
+    line-height: 1.5em;
+}
+
+.stores-waiting {
+    font-size: var(--font-size-xs);
+    line-height: 1.615em;
+}
+
+.stores-image {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .stores-card {
+        grid-column: span 6;
+    }
+}
+
+@media (max-width: 425px) {
+    .grid-column, .stores-card {
+        grid-column: span 12;
+    }
+    .grid-column + .grid-column {
+        margin-top: .4375em;
+    }
+}

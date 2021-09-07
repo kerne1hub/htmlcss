@@ -1,0 +1,62 @@
+@import "dropdown.css";
+
+.footer {
+    background: var(--color-mine);
+    color: var(--color-white);
+}
+
+.footer-logo {
+    padding: 3.5em 0 2.5em 0;
+}
+
+.footer-menu {
+    padding: 2em 0 2.5em 0;
+}
+
+.footer-social {
+    padding: 2em 0 1em 0;
+}
+
+.footer-social > a + a {
+    margin-left: 6px;
+}
+
+.footer-tags {
+    padding-bottom: 1em;
+}
+
+.footer-link {
+    display: block;
+    font-size: var(--font-size-xs);
+    color: var(--color-white);
+}
+
+.footer-link:hover {
+    color: var(--color-alto);
+}
+
+.footer-links > a + a {
+    margin-top: 1.7692em;
+}
+
+.footer-link.small {
+    font-size: var(--font-size-xxs);
+}
+
+.footer-apps {
+    display: flex;
+    justify-content: center;
+    padding: 1.5em 1em 1.5em 2em;
+}
+
+.footer-apps > a + a {
+    margin-left: 1em;
+}
+
+.footer-about {
+    padding: 2.5em 0;
+}
+
+.footer-about > .footer-link.small + .footer-link.small {
+    margin-top: 2.1818em;
+}

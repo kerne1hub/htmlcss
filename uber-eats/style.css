@@ -1,0 +1,148 @@
+@import "fonts.css";
+@import "variables.css";
+
+body, input, select, textarea, button, a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: var(--color-codgray);
+}
+
+body {
+    margin: 0;
+    background: var(--color-white);
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 966px;
+    margin: 0 auto;
+    padding: 0 8px;
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1em;
+}
+
+.grid-column {
+    grid-column: span 4;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.divider {
+    border-bottom: 1px solid var(--color-white);
+    opacity: .4;
+}
+
+.form-group {
+    margin-bottom: 2em;
+    border-bottom: 1px solid var(--color-boulder);
+}
+.form-control {
+    border: none;
+    width: 100%;
+    line-height: 1.5em;
+    padding: 1.5em 0 0 0;
+    outline: none;
+}
+
+.button {
+    font-size: var(--font-size-xs);
+    font-weight: 500;
+    background: transparent;
+    line-height: .9231em;
+    min-width: 6em;
+    padding: 1em;
+    border: 1px solid var(--color-alto);
+    border-radius: 2px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.content-up-button {
+    position: fixed;
+    bottom: 1.5em;
+    right: 1em;
+    font-size: 1rem;
+    background: var(--color-fern);
+    min-width: 4em;
+    min-height: 4em;
+    border: none;
+    box-sizing: border-box;
+}
+
+.icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+.icon-logo {
+    background: transparent url("assets/images/logo.svg") no-repeat;
+    height: 13px;
+    width: 119px;
+}
+
+.icon-language {
+    background: transparent url("assets/images/world.svg") no-repeat;
+}
+
+.icon-arrow-up {
+    background: transparent url("assets/images/arrow.svg") no-repeat center;
+    width: 32px;
+    height: 32px;
+}
+
+.icon-arrow-down {
+    background: transparent url("assets/images/arrow-back.svg") no-repeat;
+    width: 14px;
+    height: 8px;
+}
+
+.icon-facebook {
+    background: transparent url("assets/images/facebook.svg") no-repeat;
+    width: 24px;
+    height: 24px;
+}
+
+.icon-twitter {
+    background: transparent url("assets/images/twitter.svg") no-repeat;
+    width: 24px;
+    height: 24px;
+}
+
+.icon-instagram {
+    background: transparent url("assets/images/instagram.svg") no-repeat;
+    width: 24px;
+    height: 24px;
+}
+
+.icon-basket {
+    background: transparent url("assets/images/basket.svg") no-repeat;
+    width: 19px;
+    height: 23px;
+}
+
+.icon-appstore {
+    background: transparent url("assets/images/appstore.svg") no-repeat;
+    width: 109px;
+    height: 36px;
+}
+
+.icon-googleplay {
+    background: transparent url("assets/images/googleplay.svg") no-repeat;
+    width: 124px;
+    height: 36px;
+}
