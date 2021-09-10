@@ -146,3 +146,15 @@ a {
     width: 124px;
     height: 36px;
 }
+
+@media (max-width: 425px) {
+    .container {
+        padding-right: 4px;
+    }
+    .grid-column {
+        grid-column: span 12;
+    }
+    .grid-column + .grid-column {
+        margin-top: .4375em;
+    }
+}

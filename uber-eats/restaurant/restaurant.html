@@ -9,15 +9,176 @@
         <link rel="stylesheet" href="restaurant.css">
         <link rel="shortcut icon" href="favicon.png">
     </head>
+
     <body>
 
-        <div class="grid">
-            <div class="item">1</div>
-            <div class="item">2</div>
-            <div class="item">3</div>
-            <div class="item">4</div>
-            <div class="item">5</div>
-            <div class="item">6</div>
+        <header class="header">
+        <div class="container flex">
+            <a href="#"><span class="icon icon-logo"></span></a>
+            <a href="#" class="button header-login">
+                <span class="button-title">Войти</span>
+            </a>
+            <a href="#" class="button header-basket"><span class="icon icon-basket"></span></a>
+        </div>
+    </header>
+
+        <section class="restaurant">
+            <div class="container grid restaurant-description-wrapper">
+                <div class="restaurant-description">
+                    <h1 class="restaurant-name">Трактир «Пушкин»</h1>
+                    <div class="restaurant-props">
+                        <div class="restaurant-tags">₽₽₽ • Европейская</div>
+                        <div class="restaurant-label"><span>40 - 50 мин</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="restaurant-image-wrapper">
+                <img src="../assets/images/restaurant.png" alt="" class="restaurant-image">
+            </div>
+
+            <nav class="restaurant-menu">
+                <div class="container">
+                    <ul class="restaurant-list">
+                        <li class="restaurant-category-active"><a href="#">Закуски</a></li>
+                        <li class="restaurant-category"><a href="#">Салаты</a></li>
+                        <li class="restaurant-category"><a href="#">Супы</a></li>
+                        <li class="restaurant-category"><a href="#">Горячие блюда</a></li>
+                        <li class="restaurant-category"><a href="#">Гарниры</a></li>
+                        <li class="restaurant-category"><a href="#">Десерты</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <section class="restaurant-snacks">
+                <div class="container">
+                    <div class="restaurant-food">Закуски</div>
+                    <div class="divider"></div>
+                    <div class="grid restaurant-items">
+                        <a href="#" class="restaurant-item">
+                            <div class="restaurant-info">
+                                <div class="restaurant-product">Сельдь на бородинском хлебе</div>
+                                <div class="restaurant-extra">С яйцом и огурцом</div>
+                                <div class="restaurant-price">240 ₽</div>
+                            </div>
+                            <img src="../assets/images/food_1.png" alt="" class="restaurant-photo">
+                        </a>
+                        <a href="#" class="restaurant-item">
+                            <div class="restaurant-info">
+                                <div class="restaurant-product">Соленья ассорти</div>
+                                <div class="restaurant-extra"></div>
+                                <div class="restaurant-price">320 ₽</div>
+                            </div>
+                            <img src="../assets/images/food_2.png" alt="" class="restaurant-photo">
+                        </a>
+                        <a href="#" class="restaurant-item">
+                            <div class="restaurant-info">
+                                <div class="restaurant-product">Грибы маринованные</div>
+                                <div class="restaurant-extra"></div>
+                                <div class="restaurant-price">300 ₽</div>
+                            </div>
+                            <img src="../assets/images/food_3.png" alt="" class="restaurant-photo">
+                        </a>
+                        <a href="#" class="restaurant-item">
+                            <div class="restaurant-info">
+                                <div class="restaurant-product">Сало домашнее с горчицей</div>
+                                <div class="restaurant-extra"></div>
+                                <div class="restaurant-price">320 ₽</div>
+                            </div>
+                            <img src="../assets/images/food_4.png" alt="" class="restaurant-photo">
+                        </a>
+                        <a href="#" class="restaurant-item">
+                            <div class="restaurant-info">
+                                <div class="restaurant-product">Малосольная семга</div>
+                                <div class="restaurant-extra"></div>
+                                <div class="restaurant-price">390 ₽</div>
+                            </div>
+                            <img src="../assets/images/food_5.png" alt="" class="restaurant-photo">
+                        </a>
+                        <a href="#" class="restaurant-item">
+                            <div class="restaurant-info">
+                                <div class="restaurant-product">Язык говяжий с хреном</div>
+                                <div class="restaurant-extra"></div>
+                                <div class="restaurant-price">350 ₽</div>
+                            </div>
+                            <img src="../assets/images/food_6.png" alt="" class="restaurant-photo">
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <a href="#" class="button content-up-button">
+            <span class="icon icon-arrow-up"></span>
+        </a>
+
+        <div class="footer">
+            <div class="container">
+                <img src="../assets/images/white-logo.svg" alt="" class="footer-logo">
+
+                <div class="divider"></div>
+
+                <div class="footer-menu">
+                    <div class="grid">
+                        <div class="grid-column">
+                            <label class="dropdown">
+                                <div class="button dropdown-button">
+                                    <span class="icon icon-language"></span>
+                                    <span class="dropdown-value">Русский</span>
+                                    <span class="icon icon-arrow-down"></span>
+                                </div>
+
+                                <input type="checkbox" class="dropdown-input" id="lang">
+
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item">Русский</li>
+                                    <li class="dropdown-item">English</li>
+                                </ul>
+                            </label>
+
+                            <div class="footer-social">
+                                <div class="footer-tags">#UberEats</div>
+                                <a href="#"><span class="icon icon-facebook"></span></a>
+                                <a href="#"><span class="icon icon-twitter"></span></a>
+                                <a href="#"><span class="icon icon-instagram"></span></a>
+                            </div>
+                        </div>
+
+                        <div class="grid-column">
+                            <div class="footer-links">
+                                <a href="#" class="footer-link">Об UberEats</a>
+                                <a href="#" class="footer-link">Станьте партнёром по доставке</a>
+                                <a href="#" class="footer-link">Станьте партнёром-рестораном</a>
+                            </div>
+                        </div>
+
+                        <div class="grid-column">
+                            <div class="footer-links">
+                                <a href="#" class="footer-link">Все города</a>
+                                <a href="#" class="footer-link">Цены</a>
+                                <a href="#" class="footer-link">Помощь</a>
+                                <a href="#" class="footer-link">FAQs</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="footer-apps">
+                    <a href="#"><span class="icon icon-appstore"></span></a>
+                    <a href="#"><span class="icon icon-googleplay"></span></a>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="footer-about">
+                    <div class="grid">
+                        <div class="grid-column footer-link small">© 2017 Uber Technologies Inc.</div>
+                        <a href="#" class="grid-column footer-link small">Обработка персональных данных</a>
+                        <a href="#" class="grid-column footer-link small">Пользовательское соглашение</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </body>

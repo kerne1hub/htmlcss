@@ -1,13 +1,230 @@
-.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 1em;
+@import "../style.css";
+@import "../header.css";
+@import "../footer.css";
+
+.restaurant-image-wrapper {
+    position: relative;
+    height: 0;
+    padding-top: 364px;
 }
 
-.grid > * {
-    background: blue;
-    color: #fff;
-    padding: 2em;
-    border-radius: 1em;
+.restaurant-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 364px;
+    object-fit: cover;
+}
+
+.restaurant-description-wrapper {
+    height: 0;
+}
+
+.restaurant-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    top: 50%;
+    left: 0;
+    grid-column: span 5;
+    height: 204px;
+    text-align: center;
+    background: var(--color-white);
+    box-shadow: 0 0 16px var(--color-boulder-a20);
+    border-radius: 2px;
+    box-sizing: border-box;
+    z-index: 5;
+    padding: 38px;
+}
+
+.restaurant-props {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.restaurant-name {
+    font-size: var(--font-size-lg);
+    font-weight: 400;
+    margin: 0 auto;
+}
+
+.restaurant-tags {
+    font-size: var(--font-size-sm);
+    color: var(--color-dovegray);
+    margin: 0 auto;
+}
+
+.restaurant-label {
+    font-size: var(--font-size-label);
+    color: var(--color-white);
+    background: var(--color-mine);
+    border-radius: 16px;
+    padding: .75em 1.3333em;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.restaurant-menu {
+    position: sticky;
+    top: 4.5em;
+    left: 0;
+    background: var(--color-white);
+    border-bottom: 1px solid var(--color-boulder-a20);
+}
+
+.restaurant-list {
+    display: flex;
+    list-style: none;
+    padding: 2em 0;
+    margin: 0;
+}
+
+.restaurant-list > * + * {
+    margin-left: 2.5em;
+}
+
+.restaurant-category a {
+    color: var(--color-dovegray);
+}
+
+.restaurant-category-active a {
+    color: var(--color-goblin);
+}
+
+.restaurant-snacks .divider {
+    display: none;
+}
+
+.restaurant-snacks .grid {
+    grid-row-gap: 3em;
+}
+
+.restaurant-food {
+    font-size: var(--font-size-md);
+    padding-top: 3.5em;
+}
+
+.restaurant-items {
+    margin: 30px 0 40px 0;
+}
+
+.restaurant-item {
+    display: flex;
+    justify-content: space-between;
+    grid-column: span 6;
+    border: 2px solid var(--color-boulder-a20);
+    border-radius: 2px;
+}
+
+.restaurant-item:hover {
+    background: var(--color-boulder-a4);
+}
+
+.restaurant-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.restaurant-product {
+    font-size: var(--font-size-sm);
+    line-height: 1.7143em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.restaurant-extra {
+    font-size: var(--font-size-xs);
+    line-height: 1.6154em;
+    color: var(--color-dovegray);
+    margin-top: 4px;
+    margin-bottom: auto;
+}
+
+.restaurant-price {
+    font-size: var(--font-size-normal);
+    font-weight: 500;
+}
+
+.restaurant-photo {
+    width: 170px;
+    height: 160px;
+}
+
+@media (max-width: 768px) {
+    .restaurant-description {
+        grid-column: span 7;
+    }
+    .restaurant-snacks .grid {
+        grid-row-gap: 2em;
+    }
+    .restaurant-items {
+        margin: 2em 0 3em 0;
+    }
+    .restaurant-item {
+        grid-column: span 12;
+    }
+    .restaurant-photo {
+        width: 200px;
+        height: 160px;
+    }
+    .restaurant-info {
+        padding: 1em 1.5em;
+    }
+}
+
+@media (max-width: 425px) {
+    .restaurant-food {
+        text-align: center;
+        padding-top: 5em;
+    }
+    .restaurant-snacks .divider {
+        display: block;
+        border-bottom: 1px solid var(--color-boulder);
+        opacity: unset;
+        width: 50px;
+        margin: 12px auto;
+    }
+    .restaurant-image-wrapper {
+        padding-top: 256px;
+    }
+    .restaurant-image {
+        height: 256px;
+    }
+    .restaurant-description {
+        grid-column: span 12;
+        top: 73%;
+        height: 180px;
+        padding: 24px;
+    }
+    .restaurant-props {
+        flex-direction: column;
+    }
+    .restaurant-tags {
+        padding-bottom: 16px;
+    }
+    .restaurant-menu {
+        display: none;
+    }
+    .restaurant-items {
+        margin: 30px 0 40px 0;
+    }
+    .restaurant-item {
+        border: none;
+        border-bottom: 1px solid var(--color-boulder-a20);
+    }
+    .restaurant-info {
+        padding: 0 0 15px 0;
+    }
+    .restaurant-photo {
+        width: 102px;
+        height: 102px;
+    }
 }

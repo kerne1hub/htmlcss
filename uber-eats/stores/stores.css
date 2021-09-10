@@ -49,10 +49,7 @@
 }
 
 @media (max-width: 425px) {
-    .grid-column, .stores-card {
+    .stores-card {
         grid-column: span 12;
-    }
-    .grid-column + .grid-column {
-        margin-top: .4375em;
     }
 }

@@ -2,17 +2,22 @@
     --color-alto: #E0E0E0;
     --color-boulder: #757575;
     --color-boulder-a4: rgba(117,117,117,0.04);
+    --color-boulder-a20: rgba(117, 117, 117, 0.2);
     --color-codgray: #1D1D1D;
     --color-concrete: #F2F2F2;
     --color-dovegray: #626262;
     --color-fern: #59BD5A;
+    --color-goblin: #327430;
     --color-mine: #262626;
     --color-mine-a16: rgba(38, 38, 38, 0.16);
     --color-mine-light: #3B3B3B;
     --color-white: #FFF;
 
     --font-size-xxs : .6875rem;
+    --font-size-label: .75rem;
     --font-size-xs : .8125rem;
     --font-size-sm : .875rem;
+    --font-size-normal: .9375rem;
     --font-size-md : 1.375rem;
+    --font-size-lg: 1.5rem;
 }
